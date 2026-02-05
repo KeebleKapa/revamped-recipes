@@ -43,7 +43,25 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.DARK_OAK_WOOD)
                 .add(Items.MANGROVE_WOOD)
                 .add(Items.CHERRY_WOOD)
-                .add(Items.PALE_OAK_WOOD)
+                .add(Items.PALE_OAK_WOOD);
+
+        valueLookupBuilder(Tags.Items.IRON_COPPER_INTERCHANGE)
+                .add(Items.IRON_INGOT)
+                .add(Items.COPPER_INGOT);
+
+        valueLookupBuilder(Tags.Items.CONTAINERS)
+                .add(Items.CHEST)
+                .add(Items.TRAPPED_CHEST)
+                .add(Items.BARREL)
+                .add(Items.SHULKER_BOX)
+                .add(Items.COPPER_CHEST)
+                .add(Items.WAXED_COPPER_CHEST)
+                .add(Items.EXPOSED_COPPER_CHEST)
+                .add(Items.WEATHERED_COPPER_CHEST)
+                .add(Items.OXIDIZED_COPPER_CHEST)
+                .add(Items.WAXED_EXPOSED_COPPER_CHEST)
+                .add(Items.WAXED_WEATHERED_COPPER_CHEST)
+                .add(Items.WAXED_OXIDIZED_COPPER_CHEST)
         ;
     }
 }

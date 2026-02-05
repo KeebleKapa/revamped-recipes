@@ -23,6 +23,8 @@ public class Tags {
 
         public static final TagKey<Item> STONES = createTag("stones");
         public static final TagKey<Item> WOOD = createTag("wood");
+        public static final TagKey<Item> IRON_COPPER_INTERCHANGE = createTag("iron_copper_interchange");
+        public static final TagKey<Item> CONTAINERS = createTag("containers");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(RevampedRecipes.MOD_ID, name));
