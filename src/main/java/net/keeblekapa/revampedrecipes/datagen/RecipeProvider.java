@@ -90,83 +90,6 @@ public class RecipeProvider extends FabricRecipeProvider {
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_SLAB, Items.MOSSY_STONE_BRICK_SLAB, 2);
                 offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_WALL, Items.MOSSY_STONE_BRICK_WALL, 1);
 
-
-
-
-
-                // Utility Blocks
-                createShaped(RecipeCategory.MISC, Items.FURNACE,1)
-                        .pattern("###")
-                        .pattern("# #")
-                        .pattern("###")
-                        .input('#', Tags.Items.STONES)
-                        .group("furnace")
-                        .criterion(getRecipeName(Items.FURNACE), conditionsFromTag(Tags.Items.STONES))
-                        .offerTo(exporter);
-                createShaped(RecipeCategory.MISC, Items.BLAST_FURNACE,1)
-                        .pattern("###")
-                        .pattern("#@#")
-                        .pattern("$$$")
-                        .input('#', Items.IRON_INGOT)
-                        .input('@', Items.FURNACE)
-                        .input('$', Tags.Items.STONES)
-                        .group("blast_furnace")
-                        .criterion(getRecipeName(Items.BLAST_FURNACE), conditionsFromTag(Tags.Items.STONES))
-                        .offerTo(exporter);
-                createShaped(RecipeCategory.MISC, Items.STONECUTTER,1)
-                        .pattern(" @ ")
-                        .pattern("###")
-                        .input('#', Tags.Items.STONES)
-                        .input('@', Items.IRON_INGOT)
-                        .group("stonecutter")
-                        .criterion(getRecipeName(Items.STONECUTTER), conditionsFromTag(Tags.Items.STONES))
-                        .offerTo(exporter);
-
-
-                // Redstone Components
-                createShaped(RecipeCategory.REDSTONE, Items.REPEATER, 1)
-                        .pattern("TRT")
-                        .pattern("SSS")
-                        .input('T', Items.REDSTONE_TORCH)
-                        .input('R', Items.REDSTONE)
-                        .input('S', Tags.Items.STONES)
-                        .group("repeater")
-                        .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                        .criterion(hasItem(Items.REDSTONE_TORCH), conditionsFromItem(Items.REDSTONE_TORCH))
-                        .offerTo(exporter);
-                createShaped(RecipeCategory.REDSTONE, Items.COMPARATOR, 1)
-                        .pattern(" T ")
-                        .pattern("TQT")
-                        .pattern("SSS")
-                        .input('T', Items.REDSTONE_TORCH)
-                        .input('Q', Items.QUARTZ)
-                        .input('S', Tags.Items.STONES)
-                        .group("comparator")
-                        .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                        .criterion(hasItem(Items.QUARTZ), conditionsFromItem(Items.QUARTZ))
-                        .offerTo(exporter);
-                createShaped(RecipeCategory.REDSTONE, Items.PISTON, 1)
-                        .pattern("PPP")
-                        .pattern("SCS")
-                        .pattern("SRS")
-                        .input('P', ItemTags.PLANKS)
-                        .input('S', Tags.Items.STONES)
-                        .input('C', Tags.Items.IRON_COPPER_INTERCHANGE)
-                        .input('R', Items.REDSTONE)
-                        .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                        .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
-                        .offerTo(exporter);
-                createShaped(RecipeCategory.REDSTONE, Items.HOPPER, 1)
-                        .pattern("P P")
-                        .pattern("PCP")
-                        .pattern(" P ")
-                        .input('P', Tags.Items.IRON_COPPER_INTERCHANGE)
-                        .input('C', Tags.Items.CONTAINERS)
-                        .criterion(hasItem(Items.CHEST), conditionsFromTag(Tags.Items.CONTAINERS))
-                        .criterion(hasItem(Items.IRON_INGOT), conditionsFromTag(Tags.Items.IRON_COPPER_INTERCHANGE))
-                        .offerTo(exporter);
-
-
                 // Misc
                 createShaped(RecipeCategory.MISC, Items.PAPER, 8)
                         .pattern("##")
@@ -246,6 +169,23 @@ public class RecipeProvider extends FabricRecipeProvider {
                         Items.NETHERITE_SWORD, Items.NETHERITE_SPEAR, Items.NETHERITE_HELMET, Items.NETHERITE_CHESTPLATE,
                         Items.NETHERITE_LEGGINGS, Items.NETHERITE_BOOTS, Items.NETHERITE_HORSE_ARMOR, Items.NETHERITE_NAUTILUS_ARMOR),
                         RecipeCategory.MISC, Items.NETHERITE_INGOT, 0.1f, 100, "netherite_ingot");
+
+                createShapeless(RecipeCategory.MISC, Items.AMETHYST_SHARD, 4)
+                        .input(Items.AMETHYST_BLOCK)
+                        .criterion(hasItem(Items.AMETHYST_BLOCK), conditionsFromItem(Items.AMETHYST_BLOCK))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Items.NETHER_WART, 9)
+                        .input(Items.NETHER_WART_BLOCK)
+                        .criterion(hasItem(Items.NETHER_WART_BLOCK), conditionsFromItem(Items.NETHER_WART_BLOCK))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Items.WARPED_WART_BLOCK, 1)
+                        .input(Items.NETHER_WART_BLOCK)
+                        .input(Items.ENDER_PEARL)
+                        .criterion(hasItem(Items.NETHER_WART_BLOCK), conditionsFromItem(Items.NETHER_WART_BLOCK))
+                        .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
+                        .offerTo(exporter);
 
                 // Farming
                 createShapeless(RecipeCategory.FOOD, Items.WHEAT_SEEDS, 2)

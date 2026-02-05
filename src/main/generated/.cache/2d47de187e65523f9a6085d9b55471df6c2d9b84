@@ -1,6 +1,11 @@
 // 1.21.11	-999999999-01-01T00:00:00	Revamped Recipes/Tags for minecraft:item
 8b92a39d072403ba5d6988f5a40604aa8967c7cf data/revampedrecipes/tags/item/containers.json
 0ce28fe5a51654d4ddd8d339967c4fc5e7db8c9c data/revampedrecipes/tags/item/iron_copper_interchange.json
+4acdb7163cd13f287d30e71c7cb3e0a6c444f64e data/revampedrecipes/tags/item/light_blocks.json
 dfe640e62455d2a8476bd0e86bdc3f9f8dbb6020 data/revampedrecipes/tags/item/log.json
-a277dc92f40cbf465ff058a9a56f24a5daec19fe data/revampedrecipes/tags/item/stones.json
+9831949b3469f25a8187fe842d6cb84a6d1f35e2 data/revampedrecipes/tags/item/logs_and_wood.json
+858b4736f63a64046a40e9dbd025c709c79d7cb2 data/revampedrecipes/tags/item/obsidian_blocks.json
+d5819c82fddfaf937dbe9ed568e87f1206349f8d data/revampedrecipes/tags/item/range_weapons.json
+4eabf8b5381108dc0166500b923b89647682e2f8 data/revampedrecipes/tags/item/stone_slabs.json
+b33ca993ea19f960e108216194d357eeb6e8d81d data/revampedrecipes/tags/item/stones.json
 4c4757932e4981a29590b29cd8ac1b5d0b660966 data/revampedrecipes/tags/item/wood.json

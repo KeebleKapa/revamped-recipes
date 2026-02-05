@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:stick",
+    "R": "minecraft:redstone",
+    "X": "minecraft:gold_ingot",
+    "I": "#revampedrecipes:iron_copper_interchange"
+  },
+  "pattern": [
+    "I I",
+    "X#X",
+    "IRI"
+  ],
+  "result": {
+    "count": 6,
+    "id": "minecraft:powered_rail"
+  }
+}
