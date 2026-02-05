@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "#revampedrecipes:iron_copper_interchange",
+    "S": "#revampedrecipes:chiseled_stones"
+  },
+  "pattern": [
+    "SSS",
+    "S#S",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:lodestone"
+  }
+}

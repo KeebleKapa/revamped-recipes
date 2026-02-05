@@ -1,4 +1,5 @@
 // 1.21.11	-999999999-01-01T00:00:00	Revamped Recipes/Tags for minecraft:item
+2a05500de3e1681fce1a57d399bfecb3274870ca data/revampedrecipes/tags/item/chiseled_stones.json
 8b92a39d072403ba5d6988f5a40604aa8967c7cf data/revampedrecipes/tags/item/containers.json
 0ce28fe5a51654d4ddd8d339967c4fc5e7db8c9c data/revampedrecipes/tags/item/iron_copper_interchange.json
 4acdb7163cd13f287d30e71c7cb3e0a6c444f64e data/revampedrecipes/tags/item/light_blocks.json

@@ -27,6 +27,11 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.ANDESITE)
                 .add(Items.BLACKSTONE)
                 .add(Items.END_STONE);
+        valueLookupBuilder(Tags.Items.CHISELED_STONES)
+                .add(Items.CHISELED_STONE_BRICKS)
+                .add(Items.CHISELED_DEEPSLATE)
+                .add(Items.CHISELED_POLISHED_BLACKSTONE)
+                .add(Items.CHISELED_NETHER_BRICKS);
         valueLookupBuilder(Tags.Items.STONE_SLABS)
                 .add(Items.STONE_SLAB)
                 .add(Items.COBBLESTONE_SLAB)

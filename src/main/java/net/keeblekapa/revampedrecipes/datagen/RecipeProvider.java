@@ -187,6 +187,12 @@ public class RecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
                         .offerTo(exporter);
 
+                createShapeless(RecipeCategory.MISC, Items.MAGMA_CREAM, 4)
+                        .input(Items.MAGMA_BLOCK)
+                        .group("magma_cream")
+                        .criterion(hasItem(Items.MAGMA_BLOCK), conditionsFromItem(Items.MAGMA_BLOCK))
+                        .offerTo(exporter);
+
                 // Farming
                 createShapeless(RecipeCategory.FOOD, Items.WHEAT_SEEDS, 2)
                         .input(Items.WHEAT)

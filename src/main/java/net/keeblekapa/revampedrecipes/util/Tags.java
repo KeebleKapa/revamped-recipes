@@ -22,6 +22,7 @@ public class Tags {
     public static class Items {
 
         public static final TagKey<Item> STONES = createTag("stones");
+        public static final TagKey<Item> CHISELED_STONES = createTag("chiseled_stones");
         public static final TagKey<Item> STONE_SLABS = createTag("stone_slabs");
         public static final TagKey<Item> LOGS_AND_WOOD = createTag("logs_and_wood");
         public static final TagKey<Item> WOOD = createTag("wood");

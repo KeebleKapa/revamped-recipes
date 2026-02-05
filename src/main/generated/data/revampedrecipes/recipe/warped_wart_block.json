@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:nether_wart_block",
+    "minecraft:ender_pearl"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:warped_wart_block"
+  }
+}
