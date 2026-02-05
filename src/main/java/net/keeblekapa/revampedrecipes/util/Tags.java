@@ -22,6 +22,7 @@ public class Tags {
     public static class Items {
 
         public static final TagKey<Item> STONES = createTag("stones");
+        public static final TagKey<Item> WOOD = createTag("wood");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(RevampedRecipes.MOD_ID, name));

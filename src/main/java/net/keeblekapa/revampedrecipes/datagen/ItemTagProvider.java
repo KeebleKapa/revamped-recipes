@@ -33,5 +33,17 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.POLISHED_BLACKSTONE)
                 .add(Items.CHISELED_POLISHED_BLACKSTONE)
                 .add(Items.END_STONE);
+
+        valueLookupBuilder(Tags.Items.WOOD)
+                .add(Items.OAK_WOOD)
+                .add(Items.SPRUCE_WOOD)
+                .add(Items.BIRCH_WOOD)
+                .add(Items.JUNGLE_WOOD)
+                .add(Items.ACACIA_WOOD)
+                .add(Items.DARK_OAK_WOOD)
+                .add(Items.MANGROVE_WOOD)
+                .add(Items.CHERRY_WOOD)
+                .add(Items.PALE_OAK_WOOD)
+        ;
     }
 }
