@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.keeblekapa.revampedrecipes.util.Tags;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -25,10 +24,6 @@ public class RecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(registryLookup, exporter) {
             @Override
             public void generate() {
-
-
-                offerSmelting(List.of(Items.IRON_CHESTPLATE), RecipeCategory.MISC, Items.IRON_INGOT, 0.5f, 200, "iron_ingot_from_chestplate");
-
 
 
                 // Blocks
@@ -68,6 +63,34 @@ public class RecipeProvider extends FabricRecipeProvider {
                         .input('#', Items.MOSSY_COBBLESTONE_WALL)
                         .criterion(hasItem(Items.MOSSY_COBBLESTONE_WALL), conditionsFromItem(Items.MOSSY_COBBLESTONE_WALL))
                         .offerTo(exporter, "mossy_cobblestone_from_wall");
+
+                offerSmelting(List.of(Items.MOSSY_COBBLESTONE), RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE, 0.05f, 200, "cobblestone_from_mossy_cobblestone_smelting");
+                offerBlasting(List.of(Items.MOSSY_COBBLESTONE), RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE, 0.05f, 100, "cobblestone_from_mossy_cobblestone_blasting");
+                offerSmelting(List.of(Items.MOSSY_COBBLESTONE_WALL), RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_WALL, 0.05f, 200, "cobblestone_wall_from_mossy_cobblestone_wall_smelting");
+                offerBlasting(List.of(Items.MOSSY_COBBLESTONE_WALL), RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_WALL, 0.05f, 100, "cobblestone_wall_from_mossy_cobblestone_wall_blasting");
+                offerSmelting(List.of(Items.MOSSY_COBBLESTONE_STAIRS), RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_STAIRS, 0.05f, 200, "cobblestone_stairs_from_mossy_cobblestone_stairs_smelting");
+                offerBlasting(List.of(Items.MOSSY_COBBLESTONE_STAIRS), RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_STAIRS, 0.05f, 100, "cobblestone_stairs_from_mossy_cobblestone_stairs_blasting");
+                offerSmelting(List.of(Items.MOSSY_COBBLESTONE_SLAB), RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_SLAB, 0.05f, 200, "cobblestone_slab_from_mossy_cobblestone_slab_smelting");
+                offerBlasting(List.of(Items.MOSSY_COBBLESTONE_SLAB), RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_SLAB, 0.05f, 100, "cobblestone_slab_from_mossy_cobblestone_slab_blasting");
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE, Items.MOSSY_COBBLESTONE, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_STAIRS, Items.MOSSY_COBBLESTONE_STAIRS, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_SLAB, Items.MOSSY_COBBLESTONE_SLAB, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE_WALL, Items.MOSSY_COBBLESTONE_WALL, 1);
+
+                offerSmelting(List.of(Items.MOSSY_STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICKS, 0.05f, 200, "stone_bricks_from_mossy_stone_bricks_smelting");
+                offerBlasting(List.of(Items.MOSSY_STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICKS, 0.05f, 100, "stone_bricks_from_mossy_stone_bricks_blasting");
+                offerSmelting(List.of(Items.MOSSY_STONE_BRICK_WALL), RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_WALL, 0.05f, 200, "stone_brick_wall_from_mossy_stone_brick_wall_smelting");
+                offerBlasting(List.of(Items.MOSSY_STONE_BRICK_WALL), RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_WALL, 0.05f, 100, "stone_brick_wall_from_mossy_stone_brick_wall_blasting");
+                offerSmelting(List.of(Items.MOSSY_STONE_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_STAIRS, 0.05f, 200, "stone_brick_stairs_from_mossy_stone_brick_stairs_smelting");
+                offerBlasting(List.of(Items.MOSSY_STONE_BRICK_STAIRS), RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_STAIRS, 0.05f, 100, "stone_brick_stairs_from_mossy_stone_brick_stairs_blasting");
+                offerSmelting(List.of(Items.MOSSY_STONE_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_SLAB, 0.05f, 200, "stone_brick_slab_from_mossy_stone_brick_slab_smelting");
+                offerBlasting(List.of(Items.MOSSY_STONE_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_SLAB, 0.05f, 100, "stone_brick_slab_from_mossy_stone_brick_slab_blasting");
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICKS, Items.MOSSY_STONE_BRICKS, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_STAIRS, Items.MOSSY_STONE_BRICK_STAIRS, 1);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_SLAB, Items.MOSSY_STONE_BRICK_SLAB, 2);
+                offerStonecuttingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.STONE_BRICK_WALL, Items.MOSSY_STONE_BRICK_WALL, 1);
+
+
 
 
 

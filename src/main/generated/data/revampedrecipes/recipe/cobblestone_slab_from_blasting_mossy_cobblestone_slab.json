@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.05,
+  "group": "cobblestone_slab_from_mossy_cobblestone_slab_blasting",
+  "ingredient": "minecraft:mossy_cobblestone_slab",
+  "result": {
+    "id": "minecraft:cobblestone_slab"
+  }
+}

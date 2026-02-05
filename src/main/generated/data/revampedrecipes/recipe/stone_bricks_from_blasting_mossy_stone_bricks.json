@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.05,
+  "group": "stone_bricks_from_mossy_stone_bricks_blasting",
+  "ingredient": "minecraft:mossy_stone_bricks",
+  "result": {
+    "id": "minecraft:stone_bricks"
+  }
+}

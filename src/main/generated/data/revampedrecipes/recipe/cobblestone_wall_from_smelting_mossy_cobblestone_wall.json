@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.05,
+  "group": "cobblestone_wall_from_mossy_cobblestone_wall_smelting",
+  "ingredient": "minecraft:mossy_cobblestone_wall",
+  "result": {
+    "id": "minecraft:cobblestone_wall"
+  }
+}

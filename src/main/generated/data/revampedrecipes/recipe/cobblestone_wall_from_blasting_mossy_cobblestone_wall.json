@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.05,
+  "group": "cobblestone_wall_from_mossy_cobblestone_wall_blasting",
+  "ingredient": "minecraft:mossy_cobblestone_wall",
+  "result": {
+    "id": "minecraft:cobblestone_wall"
+  }
+}
