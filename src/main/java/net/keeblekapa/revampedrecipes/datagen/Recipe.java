@@ -46,6 +46,99 @@ public class Recipe extends FabricRecipeProvider {
                         .criterion(hasItem(Items.BRICK_WALL), conditionsFromItem(Items.BRICK_WALL))
                         .offerTo(exporter, "bricks_from_wall");
 
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.ANDESITE, 1)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.ANDESITE_SLAB)
+                        .criterion(hasItem(Items.ANDESITE_SLAB), conditionsFromItem(Items.ANDESITE_SLAB))
+                        .offerTo(exporter, "andesite_from_slab");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.ANDESITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.ANDESITE_STAIRS)
+                        .criterion(hasItem(Items.ANDESITE_STAIRS), conditionsFromItem(Items.ANDESITE_STAIRS))
+                        .offerTo(exporter, "andesite_from_stairs");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.ANDESITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.ANDESITE_WALL)
+                        .criterion(hasItem(Items.ANDESITE_WALL), conditionsFromItem(Items.ANDESITE_WALL))
+                        .offerTo(exporter, "andesite_from_wall");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_ANDESITE, 1)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.POLISHED_ANDESITE_SLAB)
+                        .criterion(hasItem(Items.POLISHED_ANDESITE_SLAB), conditionsFromItem(Items.POLISHED_ANDESITE_SLAB))
+                        .offerTo(exporter, "polished_andesite_from_slab");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_ANDESITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.POLISHED_ANDESITE_STAIRS)
+                        .criterion(hasItem(Items.POLISHED_ANDESITE_STAIRS), conditionsFromItem(Items.POLISHED_ANDESITE_STAIRS))
+                        .offerTo(exporter, "polished_andesite_from_stairs");
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.DIORITE, 1)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.DIORITE_SLAB)
+                        .criterion(hasItem(Items.DIORITE_SLAB), conditionsFromItem(Items.DIORITE_SLAB))
+                        .offerTo(exporter, "diorite_from_slab");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.DIORITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.DIORITE_STAIRS)
+                        .criterion(hasItem(Items.DIORITE_STAIRS), conditionsFromItem(Items.DIORITE_STAIRS))
+                        .offerTo(exporter, "diorite_from_stairs");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.DIORITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.DIORITE_WALL)
+                        .criterion(hasItem(Items.DIORITE_WALL), conditionsFromItem(Items.DIORITE_WALL))
+                        .offerTo(exporter, "diorite_from_wall");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_DIORITE, 1)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.POLISHED_DIORITE_SLAB)
+                        .criterion(hasItem(Items.POLISHED_DIORITE_SLAB), conditionsFromItem(Items.POLISHED_DIORITE_SLAB))
+                        .offerTo(exporter, "polished_diorite_from_slab");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_DIORITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.POLISHED_DIORITE_STAIRS)
+                        .criterion(hasItem(Items.POLISHED_DIORITE_STAIRS), conditionsFromItem(Items.POLISHED_DIORITE_STAIRS))
+                        .offerTo(exporter, "polished_diorite_from_stairs");
+
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.GRANITE, 1)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.GRANITE_SLAB)
+                        .criterion(hasItem(Items.GRANITE_SLAB), conditionsFromItem(Items.GRANITE_SLAB))
+                        .offerTo(exporter, "granite_from_slab");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.GRANITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.GRANITE_STAIRS)
+                        .criterion(hasItem(Items.GRANITE_STAIRS), conditionsFromItem(Items.GRANITE_STAIRS))
+                        .offerTo(exporter, "granite_from_stairs");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.GRANITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.GRANITE_WALL)
+                        .criterion(hasItem(Items.GRANITE_WALL), conditionsFromItem(Items.GRANITE_WALL))
+                        .offerTo(exporter, "granite_from_wall");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_GRANITE, 1)
+                        .pattern("#")
+                        .pattern("#")
+                        .input('#', Items.POLISHED_GRANITE_SLAB)
+                        .criterion(hasItem(Items.POLISHED_GRANITE_SLAB), conditionsFromItem(Items.POLISHED_GRANITE_SLAB))
+                        .offerTo(exporter, "polished_granite_from_slab");
+                createShaped(RecipeCategory.BUILDING_BLOCKS, Items.POLISHED_GRANITE, 3)
+                        .pattern("##")
+                        .pattern("##")
+                        .input('#', Items.POLISHED_GRANITE_STAIRS)
+                        .criterion(hasItem(Items.POLISHED_GRANITE_STAIRS), conditionsFromItem(Items.POLISHED_GRANITE_STAIRS))
+                        .offerTo(exporter, "polished_granite_from_stairs");
+
                 createShaped(RecipeCategory.BUILDING_BLOCKS, Items.COBBLESTONE, 1)
                         .pattern("#")
                         .pattern("#")
