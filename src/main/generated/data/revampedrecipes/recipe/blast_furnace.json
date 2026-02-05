@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "blast_furnace",
+  "key": {
+    "#": "minecraft:iron_ingot",
+    "$": "#revampedrecipes:stones",
+    "@": "minecraft:furnace"
+  },
+  "pattern": [
+    "###",
+    "#@#",
+    "$$$"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:blast_furnace"
+  }
+}
