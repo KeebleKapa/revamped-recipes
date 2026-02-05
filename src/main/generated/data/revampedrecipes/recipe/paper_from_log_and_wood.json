@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "paper",
+  "ingredients": [
+    "#revampedrecipes:log",
+    "#revampedrecipes:wood"
+  ],
+  "result": {
+    "count": 10,
+    "id": "minecraft:paper"
+  }
+}

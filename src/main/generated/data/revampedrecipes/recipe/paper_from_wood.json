@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "paper",
+  "key": {
+    "#": "#revampedrecipes:wood"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 12,
+    "id": "minecraft:paper"
+  }
+}

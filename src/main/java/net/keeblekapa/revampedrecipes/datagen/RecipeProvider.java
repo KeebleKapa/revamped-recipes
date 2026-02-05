@@ -170,116 +170,25 @@ public class RecipeProvider extends FabricRecipeProvider {
                 // Misc
                 createShaped(RecipeCategory.MISC, Items.PAPER, 8)
                         .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.OAK_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_oak_log");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 8)
-                        .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.ACACIA_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_acacia_log");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 8)
-                        .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.BIRCH_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_birch_log");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 8)
-                        .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.CHERRY_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_cherry_log");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 8)
-                        .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.JUNGLE_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_jungle_log");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 8)
-                        .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.DARK_OAK_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_dark_oak_log");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 8)
-                        .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.MANGROVE_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_mangrove_log");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 8)
-                        .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.SPRUCE_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_spruce_log");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 8)
-                        .pattern("##")
-                        .input('#', ItemTags.LOGS)
-                        .group("paper_from_log")
-                        .criterion(hasItem(Items.PALE_OAK_LOG), conditionsFromTag(ItemTags.LOGS))
-                        .offerTo(exporter, "paper_from_pale_oak_log");
-
+                        .input('#', Tags.Items.LOG)
+                        .group("paper")
+                        .criterion(getRecipeName(Items.PAPER), conditionsFromTag(Tags.Items.LOG))
+                        .offerTo(exporter, "paper_from_log");
                 createShaped(RecipeCategory.MISC, Items.PAPER, 12)
                         .pattern("##")
                         .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.OAK_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_oak_wood");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 12)
-                        .pattern("##")
-                        .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.ACACIA_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_acacia_wood");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 12)
-                        .pattern("##")
-                        .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.BIRCH_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_birch_wood");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 12)
-                        .pattern("##")
-                        .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.CHERRY_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_cherry_wood");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 12)
-                        .pattern("##")
-                        .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.JUNGLE_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_jungle_wood");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 12)
-                        .pattern("##")
-                        .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.DARK_OAK_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_dark_oak_wood");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 12)
-                        .pattern("##")
-                        .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.MANGROVE_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_mangrove_wood");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 12)
-                        .pattern("##")
-                        .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.SPRUCE_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_spruce_wood");
-                createShaped(RecipeCategory.MISC, Items.PAPER, 12)
-                        .pattern("##")
-                        .input('#', Tags.Items.WOOD)
-                        .group("paper_from_wood")
-                        .criterion(hasItem(Items.PALE_OAK_WOOD), conditionsFromTag(Tags.Items.WOOD))
-                        .offerTo(exporter, "paper_from_pale_oak_wood");
-
+                        .group("paper")
+                        .criterion(getRecipeName(Items.PAPER), conditionsFromTag(Tags.Items.WOOD))
+                        .offerTo(exporter, "paper_from_wood");
+                createShapeless(RecipeCategory.MISC, Items.PAPER, 10)
+                        .input(Tags.Items.LOG)
+                        .input(Tags.Items.WOOD)
+                        .group("paper")
+                        .criterion(getRecipeName(Items.PAPER), conditionsFromTag(Tags.Items.LOG))
+                        .offerTo(exporter, "paper_from_log_and_wood");
                 createShapeless(RecipeCategory.MISC, Items.PAPER, 2)
                         .input(Items.BOOK)
+                        .group("paper")
                         .criterion(hasItem(Items.BOOK), conditionsFromItem(Items.BOOK))
                         .offerTo(exporter, "paper_from_book");
 
@@ -287,6 +196,56 @@ public class RecipeProvider extends FabricRecipeProvider {
                         .input(ItemTags.WOOL)
                         .criterion(hasItem(Items.WHITE_WOOL), conditionsFromItem(Items.WHITE_WOOL))
                         .offerTo(exporter);
+
+                offerSmelting(List.of(Items.COPPER_PICKAXE, Items.COPPER_AXE, Items.COPPER_HOE,
+                        Items.COPPER_SWORD, Items.COPPER_SPEAR, Items.COPPER_HELMET, Items.COPPER_CHESTPLATE,
+                        Items.COPPER_LEGGINGS, Items.COPPER_BOOTS, Items.COPPER_HORSE_ARMOR, Items.COPPER_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.COPPER_INGOT, 0.1f, 200, "copper_ingot");
+
+                offerSmelting(List.of(Items.IRON_PICKAXE, Items.IRON_AXE, Items.IRON_HOE,
+                        Items.IRON_SWORD, Items.IRON_SPEAR, Items.IRON_HELMET, Items.IRON_CHESTPLATE,
+                        Items.IRON_LEGGINGS, Items.IRON_BOOTS, Items.IRON_HORSE_ARMOR, Items.IRON_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.IRON_INGOT, 0.1f, 200, "iron_ingot");
+
+                offerSmelting(List.of(Items.GOLDEN_PICKAXE, Items.GOLDEN_AXE, Items.GOLDEN_HOE,
+                        Items.GOLDEN_SWORD, Items.GOLDEN_SPEAR, Items.GOLDEN_HELMET, Items.GOLDEN_CHESTPLATE,
+                        Items.GOLDEN_LEGGINGS, Items.GOLDEN_BOOTS, Items.GOLDEN_HORSE_ARMOR, Items.GOLDEN_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.GOLD_INGOT, 0.1f, 200, "gold_ingot");
+
+                offerSmelting(List.of(Items.DIAMOND_PICKAXE, Items.DIAMOND_AXE, Items.DIAMOND_HOE,
+                        Items.DIAMOND_SWORD, Items.DIAMOND_SPEAR, Items.DIAMOND_HELMET, Items.DIAMOND_CHESTPLATE,
+                        Items.DIAMOND_LEGGINGS, Items.DIAMOND_BOOTS, Items.DIAMOND_HORSE_ARMOR, Items.DIAMOND_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.DIAMOND, 0.1f, 200, "diamond");
+
+                offerSmelting(List.of(Items.NETHERITE_PICKAXE, Items.NETHERITE_SHOVEL, Items.NETHERITE_AXE, Items.NETHERITE_HOE,
+                        Items.NETHERITE_SWORD, Items.NETHERITE_SPEAR, Items.NETHERITE_HELMET, Items.NETHERITE_CHESTPLATE,
+                        Items.NETHERITE_LEGGINGS, Items.NETHERITE_BOOTS, Items.NETHERITE_HORSE_ARMOR, Items.NETHERITE_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.NETHERITE_INGOT, 0.1f, 200, "netherite_ingot");
+
+                offerBlasting(List.of(Items.COPPER_PICKAXE, Items.COPPER_AXE, Items.COPPER_HOE,
+                        Items.COPPER_SWORD, Items.COPPER_SPEAR, Items.COPPER_HELMET, Items.COPPER_CHESTPLATE,
+                        Items.COPPER_LEGGINGS, Items.COPPER_BOOTS, Items.COPPER_HORSE_ARMOR, Items.COPPER_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.COPPER_INGOT, 0.1f, 100, "copper_ingot");
+
+                offerBlasting(List.of(Items.IRON_PICKAXE, Items.IRON_AXE, Items.IRON_HOE,
+                        Items.IRON_SWORD, Items.IRON_SPEAR, Items.IRON_HELMET, Items.IRON_CHESTPLATE,
+                        Items.IRON_LEGGINGS, Items.IRON_BOOTS, Items.IRON_HORSE_ARMOR, Items.IRON_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.IRON_INGOT, 0.1f, 100, "iron_ingot");
+
+                offerBlasting(List.of(Items.GOLDEN_PICKAXE, Items.GOLDEN_AXE, Items.GOLDEN_HOE,
+                        Items.GOLDEN_SWORD, Items.GOLDEN_SPEAR, Items.GOLDEN_HELMET, Items.GOLDEN_CHESTPLATE,
+                        Items.GOLDEN_LEGGINGS, Items.GOLDEN_BOOTS, Items.GOLDEN_HORSE_ARMOR, Items.GOLDEN_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.GOLD_INGOT, 0.1f, 100, "gold_ingot");
+
+                offerBlasting(List.of(Items.DIAMOND_PICKAXE, Items.DIAMOND_AXE, Items.DIAMOND_HOE,
+                        Items.DIAMOND_SWORD, Items.DIAMOND_SPEAR, Items.DIAMOND_HELMET, Items.DIAMOND_CHESTPLATE,
+                        Items.DIAMOND_LEGGINGS, Items.DIAMOND_BOOTS, Items.DIAMOND_HORSE_ARMOR, Items.DIAMOND_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.DIAMOND, 0.1f, 100, "diamond");
+
+                offerBlasting(List.of(Items.NETHERITE_PICKAXE, Items.NETHERITE_SHOVEL, Items.NETHERITE_AXE, Items.NETHERITE_HOE,
+                        Items.NETHERITE_SWORD, Items.NETHERITE_SPEAR, Items.NETHERITE_HELMET, Items.NETHERITE_CHESTPLATE,
+                        Items.NETHERITE_LEGGINGS, Items.NETHERITE_BOOTS, Items.NETHERITE_HORSE_ARMOR, Items.NETHERITE_NAUTILUS_ARMOR),
+                        RecipeCategory.MISC, Items.NETHERITE_INGOT, 0.1f, 100, "netherite_ingot");
 
                 // Farming
                 createShapeless(RecipeCategory.FOOD, Items.WHEAT_SEEDS, 2)

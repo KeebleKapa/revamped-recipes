@@ -45,6 +45,17 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.CHERRY_WOOD)
                 .add(Items.PALE_OAK_WOOD);
 
+        valueLookupBuilder(Tags.Items.LOG)
+                .add(Items.OAK_LOG)
+                .add(Items.SPRUCE_LOG)
+                .add(Items.BIRCH_LOG)
+                .add(Items.JUNGLE_LOG)
+                .add(Items.ACACIA_LOG)
+                .add(Items.DARK_OAK_LOG)
+                .add(Items.MANGROVE_LOG)
+                .add(Items.CHERRY_LOG)
+                .add(Items.PALE_OAK_LOG);
+
         valueLookupBuilder(Tags.Items.IRON_COPPER_INTERCHANGE)
                 .add(Items.IRON_INGOT)
                 .add(Items.COPPER_INGOT);
