@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "blast_furnace": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#revampedrecipes:stones"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "revampedrecipes:blast_furnace"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "blast_furnace"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "revampedrecipes:blast_furnace"
+    ]
+  }
+}

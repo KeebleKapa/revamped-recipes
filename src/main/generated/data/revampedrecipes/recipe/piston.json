@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": "#revampedrecipes:iron_copper_interchange",
+    "P": "#minecraft:planks",
+    "R": "minecraft:redstone",
+    "S": "#revampedrecipes:stones"
+  },
+  "pattern": [
+    "PPP",
+    "SCS",
+    "SRS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:piston"
+  }
+}

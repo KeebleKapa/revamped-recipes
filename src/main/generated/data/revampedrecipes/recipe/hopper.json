@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": "#revampedrecipes:containers",
+    "P": "#revampedrecipes:iron_copper_interchange"
+  },
+  "pattern": [
+    "P P",
+    "PCP",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:hopper"
+  }
+}

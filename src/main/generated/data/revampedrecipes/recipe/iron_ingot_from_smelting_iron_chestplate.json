@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "iron_ingot_from_chestplate",
+  "ingredient": "minecraft:iron_chestplate",
+  "result": {
+    "id": "minecraft:iron_ingot"
+  }
+}
