@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "minecraft:gold_leggings"
+  },
+  "result": {
+    "count": 5,
+    "id": "minecraft:gold_ingot"
+  }
+}
