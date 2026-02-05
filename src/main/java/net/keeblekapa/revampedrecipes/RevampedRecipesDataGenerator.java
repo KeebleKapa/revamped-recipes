@@ -8,7 +8,7 @@ public class RevampedRecipesDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
-        pack.addProvider(ItemTagProvider::new);
-        pack.addProvider(RecipeProvider::new);
+        pack.addProvider(ItemTag::new);
+        pack.addProvider(Recipe::new);
 	}
 }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "revampedrecipes:tuff_bricks_from_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tuff_brick_wall": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:tuff_brick_wall"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tuff_brick_wall"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "revampedrecipes:tuff_bricks_from_wall"
+    ]
+  }
+}
